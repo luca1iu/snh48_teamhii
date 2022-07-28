@@ -1,0 +1,157 @@
+/* ------------------------------- 初始化 -------------------------------------- */
+
+p, ul, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    overflow-y: scroll;
+}
+
+body {
+    height: 100%;
+    min-width: 1500px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    color: #a6a6a6;
+    font-size: 16px;
+    font-family: '微软雅黑', 'Nanum Gothic', 'simsun', 'dotum', 'AppleGothic', 'arial', 'Helvetica', sans-serif;
+    /* font-family: '楷体', '微软雅黑', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif */
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* ------------------- 布局样式 ------------------------------------*/
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container {
+    flex: 1;
+    background: #f0f2f4;
+}
+
+.main-container.black {
+    background: #191919;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1500px;
+}
+
+.offset-y {
+    margin-top: -70px;
+}
+
+/* footer */
+
+footer {
+    padding: 50px 0 40px;
+    background: #f0f2f4;
+    text-align: center;
+}
+
+footer.black {
+    background: #191919;
+}
+
+footer .links {
+    margin-left: -10px;
+    margin-bottom: 10px;
+}
+
+footer .links a {
+    display: inline-block;
+    padding: 0 10px 10px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #000;
+}
+
+/* 分割线 */
+
+footer .links span, footer .beian span {
+    margin: 0 10px;
+    font-size: 10px;
+    color: #525252;
+}
+
+footer .meta {
+    font-size: 12px;
+    font-weight: 500;
+    color: #525252;
+}
+
+footer .beian a {
+    font-size: 10px;
+    color: #525252;
+}
+
+footer.black .links a, footer.black .links span, footer.black .meta, footer.black .beian a {
+    color: #fff;
+}
+
+footer .beian {
+    margin-top: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

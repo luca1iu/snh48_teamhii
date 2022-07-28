@@ -1,0 +1,253 @@
+.nav-container {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 70px;
+    background: #050505;
+    z-index: 9999
+}
+
+.nav-container .menu-wrap .home {
+    position: absolute;
+    left: 200px;
+    top: 0
+}
+
+.nav-container .menu-wrap .home a {
+    display: block;
+    height: 70px;
+    line-height: 70px;
+    font-size: 24px;
+    font-weight: 700
+}
+
+.nav-wrap .nav a {
+    font-weight: 700;
+    letter-spacing: 1px
+}
+
+.nav-wrap .nav a small {
+    display: none
+}
+
+.nav-container .menu-wrap .home a, .nav-container .nav-wrap .nav a {
+    color: #191919
+}
+
+.nav-container .sub-nav-btn.open span {
+    background: #191919
+}
+
+.nav-container.white .menu-wrap .home a, .nav-container.white .nav-wrap .main-nav .nav a {
+    color: #fff
+}
+
+.nav-container.white .sub-nav-btn.open span {
+    background: #fff
+}
+
+.sub-nav-btn {
+    position: absolute;
+    width: 60px;
+    height: 20px;
+    right: 10px;
+    top: 25px;
+    cursor: pointer
+}
+
+.sub-nav-btn span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: #191919
+}
+
+.sub-nav-btn.open {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center
+}
+
+.sub-nav-btn.close {
+    margin-top: 6px
+}
+
+.sub-nav-btn.close span:first-child {
+    transform: rotateZ(45deg)
+}
+
+.sub-nav-btn.close span:last-child {
+    transform: rotateZ(-45deg)
+}
+
+@media (min-width: 960px) {
+    .nav-wrap .main-nav {
+        margin-top: -70px;
+        margin: 0 auto;
+        max-width: 1082px
+    }
+
+    .nav-wrap .main-nav a {
+        font-size: 15px
+    }
+
+    .nav-wrap .main-nav .nav {
+        margin-left: -20px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center
+    }
+
+    .nav-wrap .main-nav .nav li {
+        position: relative;
+        height: 70px;
+        width: 130px;
+        line-height: 70px;
+        text-align: center;
+        align-items: center;
+        box-sizing: border-box
+    }
+
+    .nav-wrap .main-nav .nav li:first-child {
+        display: none
+    }
+
+
+    .nav-wrap .main-nav .nav li:hover .ch {
+        font-size: 18px;
+    }
+
+
+    .nav-wrap .sub-nav {
+        position: fixed;
+        right: -330px;
+        top: 0;
+        width: 320px;
+        height: auto;
+        background: #fff;
+        z-index: 2;
+        transition: .5s;
+        filter: drop-shadow(-2px -2px 7px rgba(0, 0, 0, .3))
+    }
+
+    .nav-wrap.show .sub-nav {
+        right: 0
+    }
+
+    .nav-wrap .sub-nav .nav {
+        padding: 70px 30px 30px
+    }
+
+    .nav-wrap .sub-nav .nav li {
+        padding: 10px 0
+    }
+
+    .nav-wrap .sub-nav .nav li:nth-last-of-type(2) {
+        padding-bottom: 30px;
+        border-bottom: 1px solid #ddd
+    }
+
+    .nav-wrap .sub-nav .nav li:nth-last-of-type(1) {
+        padding-top: 20px
+    }
+
+    .nav-wrap .sub-nav a {
+        font-size: 14px
+    }
+
+    .footer-nav {
+        display: none
+    }
+}
+
+@media (max-width: 1182px) and (min-width: 960px) {
+    .nav-wrap .main-nav {
+        margin-left: 100px
+    }
+}
+
+@media (max-width: 960px) {
+    .nav-container.white .menu-wrap {
+        filter: drop-shadow(0 2px 2px #0c3c7a)
+    }
+
+    .menu-wrap {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 70px
+    }
+
+    .nav-wrap {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        background: rgba(0, 0, 100, .7);
+        overflow-y: auto;
+        transition: .5s
+    }
+
+    .nav-wrap.show {
+        left: 0
+    }
+
+    .sub-nav-btn {
+        right: 10px
+    }
+
+    .sub-nav-btn.close span {
+        background: #fff
+    }
+
+    .nav-wrap .nav {
+        padding-left: 30px
+    }
+
+    .nav-wrap .nav a {
+        color: #fff !important
+    }
+
+    .nav-wrap .main-nav .nav li .ch, .nav-wrap .main-nav .nav li .line {
+        display: none
+    }
+
+    .nav-wrap .nav a small {
+        padding-left: 6px;
+        display: inline
+    }
+
+    .nav-wrap .main-nav {
+        margin-top: 50px
+    }
+
+    .nav-wrap .sub-nav {
+        margin-top: 30px
+    }
+
+    .nav-wrap .main-nav .nav li {
+        font-size: 18px;
+        margin: 14px 0
+    }
+
+    .nav-wrap .footer-nav .nav li, .nav-wrap .sub-nav .nav li {
+        font-size: 16px;
+        margin: 10px 0
+    }
+
+    .nav-wrap .sub-nav .nav li:last-child {
+        border-bottom: 1px solid #fff;
+        margin-top: 20px;
+        padding: 8px 0;
+        margin-right: 30px
+    }
+
+    .footer-nav {
+        display: block;
+        margin: 30px 0 50px
+    }
+}
