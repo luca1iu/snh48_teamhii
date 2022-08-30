@@ -24,20 +24,17 @@ for seg in segs:  # 循环遍历每一个分词文本
         mytext_list.append(seg.replace(" ", ""))
 
 print(mytext_list)  # 打印过滤后的弹幕数据
+print('hello')
 cloud_text = ",".join(mytext_list)  # 连接列表里面的词语
 print(cloud_text)
 
 plt.figure()  # 图形窗口
-wc = WordCloud(
-    background_color="white",  # 背景颜色
-    max_words=200,  # 显示最大次数
-    font_path=r'C:/Windows/Fonts/STXINGKA.TTF',  # 字体
-    width=400,  # 宽
-    height=200,  # 高
-    scale=10).generate(cloud_text)  # 迭代生成词云
+# for win:font_path=r'C:/Windows/Fonts/STXINGKA.TTF'
+# for mac: font_path="/System/Library/fonts/PingFang.ttc"
+wc = WordCloud(background_color='white', max_words=200, width=400, height=200, scale=10,
+               font_path="/System/Library/fonts/PingFang.ttc").generate(cloud_text)
 wc.to_file("我的第一个词云.png")
 plt.imshow(wc, interpolation="bilinear")  # 插值为双线性,会使显示平滑更加平滑
 plt.axis("off")  # 坐标轴隐藏
 plt.show()
 print("成功!")
-
